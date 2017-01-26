@@ -39,21 +39,27 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void prepareModelData() {
-        Model model = new Model("draginja", "Podgorica", "Uzivam u prijatnoj veceri!","15","2");
+        Model model = new Model("draginja", "Podgorica", "Uzivam u prijatnoj veceri!", "15", "2");
         modelList.add(model);
-        model = new Model("milutin","Kuvajt","Kako lipo vreme!","25","1");
+        model = new Model("milutin", "Kuvajt", "Kako lipo vreme!", "25", "1");
         modelList.add(model);
-        model = new Model("markosankovic", "Frankfurt", "Borba!","23","3");
+        model = new Model("markosankovic", "Frankfurt", "Borba!", "23", "3");
         modelList.add(model);
-        model = new Model("ivan", "Barcelona", "Kako smo lepi! ","36","3");
+        model = new Model("ivan", "Barcelona", "Kako smo lepi! ", "36", "3");
         modelList.add(model);
-        model = new Model("nidzo", "Skupstina", "Necu da glasam!","45","3");
+        model = new Model("nidzo", "Skupstina", "Necu da glasam!", "45", "3");
         modelList.add(model);
-        model = new Model("davidsodaa", "Nije bitno", "Ne znam gde sam!","36","3");
+        model = new Model("davidsodaa", "Nije bitno", "Ne znam gde sam!", "36", "3");
         modelList.add(model);
     }
-    public void startProfileActivity(View view){
-        Intent i = new Intent (this, ProfilActivity.class);
+
+    public void startProfileActivity(View view) {
+        Intent i = new Intent(this, ProfilActivity.class);
+        startActivity(i);
+    }
+
+    public void startSearchActivity(View view) {
+        Intent i = new Intent(this, SearchActivity.class);
         startActivity(i);
     }
 }

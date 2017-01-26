@@ -61,6 +61,7 @@
             android:src="@drawable/home" />
 
         <ImageView
+            android:onClick="startSearchActivity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
