@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_list_items"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_between"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_height"
+        android:background="@drawable/header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_and_right_margins"
+            android:layout_marginRight="@dimen/left_and_right_margins">
+
+            <ImageView
+                android:id="@+id/image_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/icon1_padding"
+                android:src="@drawable/avatar" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_view1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sodadavidsoda"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/fill"
+                    android:drawablePadding="@dimen/little_padding"
+                    android:text="Gornji Milanovac, Srbija"
+                    android:textColor="@color/colorLightGrey" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/image_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/icon1_padding"
+                android:src="@drawable/more" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relative_layout2"
+        android:adjustViewBounds="true"
+        android:src="@drawable/image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/image_view3"
+        android:background="@drawable/footer"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_new"
+            android:layout_marginRight="@dimen/margin_new"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="''What is the difference between Internet and intranet?''" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:alpha="0.5"
+            android:background="@color/colorLightGrey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:layout_marginLeft="@dimen/margin_new"
+            android:layout_marginRight="@dimen/margin_new">
+
+            <TextView
+                android:id="@+id/text_view1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/like1"
+                android:drawablePadding="@dimen/little_padding"
+                android:text="123 likes" />
+
+            <TextView
+                android:id="@+id/text_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_new"
+                android:layout_toRightOf="@id/text_view1"
+                android:drawableLeft="@drawable/comment"
+                android:drawablePadding="@dimen/little_padding"
+                android:text="10 comments" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_new"
+                android:layout_toRightOf="@id/text_view2"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="3 days" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
