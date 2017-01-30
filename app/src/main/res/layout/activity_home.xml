@@ -58,7 +58,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/home" />
+            android:src="@drawable/home"
+            android:padding="@dimen/little_padding"/>
 
         <ImageView
             android:onClick="startSearchActivity"
@@ -66,21 +67,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/search" />
+            android:src="@drawable/search"
+            android:padding="@dimen/little_padding"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/photo" />
+            android:src="@drawable/photo"
+            android:padding="@dimen/little_padding"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/activity" />
+            android:src="@drawable/activity"
+            android:padding="@dimen/little_padding"
+            android:onClick="startActivityActivity"/>
 
         <ImageView
             android:onClick="startProfileActivity"
@@ -88,7 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/profile" />
+            android:src="@drawable/profile"
+            android:padding="@dimen/little_padding"/>
 
     </LinearLayout>
 </RelativeLayout>

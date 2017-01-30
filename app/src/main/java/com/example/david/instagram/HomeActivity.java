@@ -1,12 +1,8 @@
 package com.example.david.instagram;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import com.example.david.instagram.recycle.InstagramAdapter;
 import com.example.david.instagram.recycle.Model;
@@ -15,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends Base {
     private RecyclerView recyclerView;
     private InstagramAdapter mAdapter;
     private List<Model> modelList = new ArrayList<>();
@@ -51,16 +47,6 @@ public class HomeActivity extends AppCompatActivity {
         modelList.add(model);
         model = new Model("davidsodaa", "Nije bitno", "Ne znam gde sam!", "36", "3");
         modelList.add(model);
-    }
-
-    public void startProfileActivity(View view) {
-        Intent i = new Intent(this, ProfilActivity.class);
-        startActivity(i);
-    }
-
-    public void startSearchActivity(View view) {
-        Intent i = new Intent(this, SearchActivity.class);
-        startActivity(i);
     }
 }
 

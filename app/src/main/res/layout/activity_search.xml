@@ -40,7 +40,9 @@
                 android:layout_toEndOf="@+id/image_view4"
                 android:layout_toRightOf="@+id/image_view4"
                 android:background="@color/colorGreyBackground"
-                android:hint="@string/search" />
+                android:hint="@string/search"
+                android:maxLength="15"
+                android:textCursorDrawable="@drawable/grey_cursor"/>
         </RelativeLayout>
 
         <ImageView
@@ -84,7 +86,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/home123" />
+            android:src="@drawable/home123"
+            android:onClick="startHomeActivity"/>
 
         <ImageView
             android:layout_width="0dp"
@@ -105,7 +108,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/activity" />
+            android:src="@drawable/activity"
+            android:onClick="startActivityActivity"/>
 
         <ImageView
             android:layout_width="0dp"

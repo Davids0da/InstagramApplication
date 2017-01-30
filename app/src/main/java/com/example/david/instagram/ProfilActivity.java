@@ -7,7 +7,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-public class ProfilActivity extends AppCompatActivity {
+public class ProfilActivity extends Base {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -124,7 +124,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:alpha="0.6"
-                    android:text="@string/Following"
+                    android:text="@string/following"
                     android:textColor="@color/colorWhite"
                     android:textSize="17dp" />
             </LinearLayout>
@@ -195,14 +195,16 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/home123" />
+            android:src="@drawable/home123"
+            android:onClick="startHomeActivity"/>
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/search" />
+            android:src="@drawable/search"
+            android:onClick="startSearchActivity"/>
 
         <ImageView
             android:layout_width="0dp"
@@ -216,7 +218,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/activity" />
+            android:src="@drawable/activity"
+            android:onClick="startActivityActivity"/>
 
         <ImageView
             android:layout_width="0dp"

@@ -2,6 +2,8 @@
     <string name="app_name">Instagram</string>
     <string name="posts">Posts</string>
     <string name="followers">Followers</string>
-    <string name="Following">Following</string>
+    <string name="following">Following</string>
     <string name="search">Search</string>
+    <string name="activity">Activity</string>
+    <string name="you">You</string>
 </resources>
